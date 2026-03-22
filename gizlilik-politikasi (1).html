@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rüyam — Gizlilik Politikası</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #020f1e;
+  color: #d9e7fc;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.8;
+  padding: 2rem 1.5rem 4rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+h1 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 2.2rem; color: #93f1fd; margin-bottom: 0.5rem; }
+h2 { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.4rem; color: #93f1fd; margin: 2rem 0 0.75rem; }
+p { color: #9eacc0; margin-bottom: 1rem; font-size: 0.95rem; }
+ul { color: #9eacc0; margin: 0.5rem 0 1rem 1.5rem; font-size: 0.95rem; }
+ul li { margin-bottom: 0.4rem; }
+.meta { color: #697789; font-size: 0.85rem; margin-bottom: 2rem; }
+.highlight { color: #d9e7fc; }
+.badge {
+  display: inline-block;
+  background: rgba(147,241,253,0.1);
+  color: #93f1fd;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.divider { border: none; border-top: 1px solid rgba(60,73,90,0.4); margin: 2rem 0; }
+.contact-box {
+  background: rgba(18,39,60,0.4);
+  border: 1px solid rgba(147,241,253,0.1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+.contact-box p { margin: 0; }
+</style>
+</head>
+<body>
+
+<div class="badge">Yasal Belge</div>
+<h1>Gizlilik Politikası</h1>
+<p class="meta">Son güncelleme: Mart 2026 · Rüyam Uygulaması</p>
+
+<p>Rüyam uygulamasını kullanarak gizlilik politikamızı kabul etmiş olursunuz. Bu belge, hangi verileri topladığımızı, neden topladığımızı ve nasıl koruduğumuzu açıklar.</p>
+
+<hr class="divider"/>
+
+<h2>1. Topladığımız Veriler</h2>
+<p>Rüyam yalnızca hizmetin işleyişi için zorunlu olan minimum veriyi toplar:</p>
+<ul>
+  <li><span class="highlight">E-posta adresi</span> — hesap oluşturma ve kimlik doğrulama için</li>
+  <li><span class="highlight">Rüya metinleri</span> — yapay zeka yorumu üretmek için; yalnızca sizin hesabınızla ilişkilendirilir</li>
+  <li><span class="highlight">Cihaz bilgisi</span> — yalnızca teknik hata tespiti (crash raporu) için; kişisel kimlik içermez</li>
+</ul>
+<p><strong class="highlight">Konum bilgisi toplanmaz.</strong> Kullanıcı davranışı takibi, reklam profili oluşturma veya üçüncü taraf pazarlama amacıyla hiçbir veri işlenmez.</p>
+
+<hr class="divider"/>
+
+<h2>2. Verileriniz Nasıl Kullanılır?</h2>
+<ul>
+  <li>Rüya yorumu üretmek için yapay zeka modeline iletilir (yalnızca işlem anında, saklanmaz)</li>
+  <li>Hesabınıza bağlı rüya geçmişiniz şifreli olarak saklanır</li>
+  <li>Teknik hataların tespiti ve uygulamanın iyileştirilmesi</li>
+  <li>Abonelik ve ödeme doğrulaması</li>
+</ul>
+
+<hr class="divider"/>
+
+<h2>3. Verileriniz Kimlerle Paylaşılır?</h2>
+<p><strong class="highlight">Verileriniz hiçbir üçüncü tarafla satılmaz veya kiralanmaz.</strong></p>
+<p>Yalnızca aşağıdaki teknik altyapı sağlayıcılarıyla çalışılır:</p>
+<ul>
+  <li><span class="highlight">Anthropic</span> — yapay zeka yorumu üretimi (rüya metni yalnızca anlık işlem için iletilir, Anthropic tarafından saklanmaz)</li>
+  <li><span class="highlight">Supabase</span> — şifreli veritabanı altyapısı (GDPR uyumlu, AB/ABD veri merkezi)</li>
+  <li><span class="highlight">Google Play / App Store</span> — ödeme işlemleri (ödeme bilgilerine Rüyam erişemez)</li>
+</ul>
+
+<hr class="divider"/>
+
+<h2>4. Veri Güvenliği</h2>
+<ul>
+  <li>Tüm veriler SSL/TLS şifreli bağlantı üzerinden iletilir</li>
+  <li>Veritabanında şifreli olarak saklanır (AES-256)</li>
+  <li>Şifreler asla düz metin olarak tutulmaz (bcrypt hash)</li>
+  <li>Yetkisiz erişime karşı düzenli güvenlik denetimleri yapılır</li>
+</ul>
+
+<hr class="divider"/>
+
+<h2>5. Veri Saklama Süresi</h2>
+<p>Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde tüm kişisel verileriniz 30 gün içinde kalıcı olarak silinir. Rüya metinlerinizi istediğiniz zaman uygulama içinden silebilirsiniz.</p>
+
+<hr class="divider"/>
+
+<h2>6. Haklarınız (KVKK / GDPR)</h2>
+<p>Türkiye'deki kullanıcılar KVKK, AB/Avrupa'daki kullanıcılar GDPR kapsamında aşağıdaki haklara sahiptir:</p>
+<ul>
+  <li>Verilerinize erişim talep etme</li>
+  <li>Verilerinizin düzeltilmesini isteme</li>
+  <li>Verilerinizin silinmesini talep etme ("unutulma hakkı")</li>
+  <li>Veri işlemeye itiraz etme</li>
+  <li>Veri taşınabilirliği talep etme</li>
+</ul>
+<p>Bu haklarınızı kullanmak için aşağıdaki iletişim adresine yazabilirsiniz.</p>
+
+<hr class="divider"/>
+
+<h2>7. Çocukların Gizliliği</h2>
+<p>Rüyam 13 yaş altı kullanıcılara yönelik değildir. 13 yaş altı bir kullanıcıya ait veri topladığımızı fark edersek bu veriler derhal silinir.</p>
+
+<hr class="divider"/>
+
+<h2>8. Politika Değişiklikleri</h2>
+<p>Bu politikada önemli bir değişiklik yapılması durumunda uygulama içi bildirim veya e-posta yoluyla önceden bilgilendirilirsiniz.</p>
+
+<hr class="divider"/>
+
+<div class="contact-box">
+  <h2 style="margin-top:0;">İletişim</h2>
+  <p>Gizlilik ile ilgili sorularınız için: <span class="highlight">Uygulama içi destek formu</span></p>
+  <p style="margin-top:0.5rem; color:#697789; font-size:0.85rem;">Uygulama içinden "Destek" bölümüne yazabilirsiniz. Yanıt süresi: en geç 30 gün.</p>
+</div>
+
+</body>
+</html>
